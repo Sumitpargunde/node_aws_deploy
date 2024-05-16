@@ -1,0 +1,16 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "hello world node js deployment by github actions ci/cd pipeline",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sumit_Pargunde",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

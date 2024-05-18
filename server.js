@@ -1,11 +1,15 @@
+require('dotenv').config();
+
 const express = require ('express');
 
 const app = express();
 
+const PORT = process.env.PORT
+
 app.get('/api/get', (req, res) => {
-    res.send({ message : 'nodejs AWS Deployment'});
+    res.send({ message : 'this is nodejs app with CI/CD AWS Deployment using EC2 instance and github actions'});
 })
 
-app.listen(9000, (req, res) => {
-    console.log('server running on port 9000');
+app.listen(PORT, (req, res) => {
+    console.log(`server running on port ${PORT}`);
 })

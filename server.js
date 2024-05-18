@@ -13,3 +13,7 @@ app.get('/api/get', (req, res) => {
 app.listen(PORT, (req, res) => {
     console.log(`server running on port ${PORT}`);
 })
+
+app.get('/api/hello', (req, res) => {
+    res.send({ message : 'Hello World!!!!'});
+})
